@@ -1,0 +1,77 @@
+#banner {
+  width: 100%;
+}
+
+#banner:nth-child(1){
+  display: block;
+}
+
+.myself {
+width:500px;
+display: block;
+margin: auto;
+}
+
+#cash {
+  width: 75%;
+  height: 50%;
+  position: relative;
+  left: 13%;
+}
+
+a {
+  text-decoration: none;
+  color: #555684;
+  -webkit-transition: #d1b6e3 2s;
+  transition: #d1b6e3 2s;
+  transition-property: all;
+}
+
+div{
+background-image: url('https://78.media.tumblr.com/1ec3fbaef6338f55e87048e836188c62/tumblr_ozwdjv3D1Y1uae3ogo1_1280.jpg');
+background-repeat: repeat;
+background-size: auto;
+}
+
+nav{
+      background-color: #297557;
+      font-size: 40px;
+}
+
+ul li{
+    display: inline;
+    text-decoration: none;
+}
+li{
+  height: 140px;
+  width: 140px;
+  padding-left: 12%;
+}
+
+.portfolio img:nth-child(1){
+  width: 100%;
+  padding-left: none;
+}
+
+#images img{
+  background: none;
+  width: calc(100% / 4);
+  height: 200px;
+  display: inline-block;
+  margin: inherit;
+  position: relative;
+  left: 13%;
+}
+
+h1, h2{
+  	font-family: 'Pacifico', cursive;
+}
+
+p, nav{
+  font-family: 'Bad Script', cursive;
+}
+
+p{
+  font-size: 25px;
+  text-align: center;
+}

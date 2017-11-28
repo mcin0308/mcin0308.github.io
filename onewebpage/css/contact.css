@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*{
+	margin: 0;
+	padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+	background: #f9f9f9;
+}
+
+::-webkit-input-placeholder{color: #777;}
+:-moz-placeholder { /* Firefox 18- */ color: #777;}
+::-moz-placeholder {  /* Firefox 19+ */ color: #777;}
+:-ms-input-placeholder {color: #777;}
+
+.container{
+  position: relative;
+  width: 100%;
+	padding: 1em;
+	margin: auto;
+	background: #D3CCE3;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.left, .right {
+  position: relative;
+  width: 100%;
+  padding: 1em;
+  display: block;
+  background: none;
+}
+
+.container h2{
+	text-align: center;
+	text-transform: uppercase;
+	color: #555684;
+	font-family: 'Pacifico', cursive;
+}
+
+#contact input[type="text"],#contact input[type="email"], #contact textarea{
+	display: block;
+	padding: 10px;
+	margin: 10px auto;
+	width: 100%;
+	font-size: 18px;
+	color: #777;
+  border: 1px solid #ccc;
+	 font-family: 'Open Sans', sans-serif;
+}
+
+#contact textarea{
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#contact input:hover, #contact textarea:hover{
+	border: 1px solid #888;
+}
+#contact input:focus, #contact textarea:focus{
+	border: 1px solid #777;
+}
+
+
+#contact textarea{
+	max-width: 100%;
+	min-width: 100%;
+	max-height: 180px;
+	min-height: 180px;
+  resize: none;
+}
+
+#contact .send-button{
+	text-align: center;
+}
+
+#contact .send-button button[type="submit"]{
+	color: #000;
+  background: #8e94ce;
+  border: none;
+	width: 100%;
+	padding: 10px 0;
+	font-size: 20px;
+	text-transform: uppercase;
+	transition: .5s all ease;
+  cursor: pointer;
+}
+
+#contact .send-button button[type="submit"]:hover{
+	background: #d1b6e3;
+}
+
+#contact .send-button button[type="submit"]:focus{
+	position: relative;
+	top: 2px;
+}
+
+
+/*resoponsive coding*/
+
+@media screen and (min-width: 640px){
+	.container{
+		width: 600px;
+	}
+
+  #contact textarea{
+    max-width: 98%;
+    min-width: 98%;
+    min-height: 152px;
+    margin-right: 0;
+  }
+
+	#contact .right,#contact .left{
+		display: block;
+	}
+
+	#contact .right{
+		float: right;
+		width: 50%;
+	}
+
+	#contact .left{
+		float: left;
+		width: 50%;
+	}
+	.cl{
+    clear: both;
+  }
+}
